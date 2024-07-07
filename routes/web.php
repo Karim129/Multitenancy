@@ -24,6 +24,7 @@ foreach (config('tenancy.central_domains') as $domain) {
         });
         require __DIR__ . '/centralAuth.php';
 // php artisan queue:work --queue=high,notification
-
+// php artisan subscription:SubscriptionExpireNotification
+// php artisan queue:work --queue=high,notification
     });
 }
